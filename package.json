@@ -10,12 +10,20 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@tensorflow/tfjs": "^2.0.0",
     "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.15.0",
     "echarts": "^4.7.0",
+    "echarts-stat": "^1.1.1",
     "element-ui": "^2.13.2",
+    "mavon-editor": "^2.9.0",
     "vue": "^2.5.2",
+    "vue-csv-import": "^3.3.0",
+    "vue-d3": "^0.1.0",
     "vue-echarts": "^5.0.0-beta.0",
     "vue-router": "^3.0.1",
+    "vue-xls-csv-parser": "0.0.21",
     "vuex": "^3.4.0"
   },
   "devDependencies": {

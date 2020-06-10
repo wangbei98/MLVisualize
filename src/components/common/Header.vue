@@ -8,8 +8,16 @@
             <i v-else class="el-icon-s-unfold"></i>
         </div>
         <div class="logo">机器学习可视化系统</div>
+
+
         <div class="header-right">
             <div class="header-user-con">
+                <el-link type="primary" href='/#/home/resources'>资料下载<i class="el-icon-view el-icon--right"></i> </el-link>
+                <el-divider direction="vertical"></el-divider>
+                <el-link type="primary" href='/#/home/notebook'>笔记<i class="el-icon-edit el-icon--right"></i> </el-link>
+                <el-divider direction="vertical"></el-divider>
+                <el-link type="primary" href='/#/home/todos'>待办<i class="el-icon-circle-check el-icon--right"></i> </el-link>
+                <el-divider direction="vertical"></el-divider>
                 <!-- 全屏显示 -->
                 <div class="btn-fullscreen" @click="handleFullScreen">
                     <!-- 通过三元表达式来显示不同的文字提示，placement属性控制文字提示出现的位置 -->
@@ -29,7 +37,7 @@
                     </span>
                     <!-- slot设置下拉列表 -->
                     <el-dropdown-menu slot="dropdown">
-                        <a href="https:wangbei.xyz" target="_blank">
+                        <a href="#" target="_blank">
                             <el-dropdown-item>访问博客</el-dropdown-item>
                         </a>
                         <el-dropdown-item divided command="loginout">退出登录</el-dropdown-item>

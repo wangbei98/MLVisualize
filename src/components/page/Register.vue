@@ -2,7 +2,7 @@
 <!-- 登录组件 -->
     <div class="login-wrap">
         <div class="ms-login">
-            <div class="ms-title">登录</div>
+            <div class="ms-title">注册</div>
             <!-- model：表单数据对象，rules：表单验证规则，ref：给元素或子组件注册引用信息 -->
             <el-form :model="param" :rules="rules" ref="login" label-width="0px" class="ms-content">
                 <!-- 用户名表单 -->
@@ -23,12 +23,9 @@
                     </el-input>
                 </el-form-item>
                 <div class="login-btn">
-                    <el-button type="primary" @click="submitForm()">登录</el-button>
+                    <el-button type="primary" @click="submitForm()">注册</el-button>
                 </div>
-                <p class="login-tips">Tips : 请输入正确的用户名和密码。</p>
-                <el-button size='small' round>QQ登录</el-button>
-                <el-button size="small" round>微信登录</el-button>
-                <router-link :to="{name: 'vRegister'}">Register</router-link>
+                <p class="login-tips">Tips : 用户名和密码随便填。</p>
             </el-form>
         </div>
     </div>
@@ -51,17 +48,18 @@ export default {
     methods: {
         submitForm() {
             // 获取ref注册的引用信息
-            this.$refs.login.validate(valid => {
-                if (valid) {
-                    this.$message.success('登录成功');
-                    localStorage.setItem('ms_username', this.param.username);
-                    this.$router.push('/');
-                } else {
-                    this.$message.error('请输入账号和密码');
-                    console.log('error submit!!');
-                    return false;
-                }
-            });
+            // this.$refs.login.validate(valid => {
+            //     if (valid) {
+            //         this.$message.success('登录成功');
+            //         localStorage.setItem('ms_username', this.param.username);
+            //         this.$router.push('/');
+            //     } else {
+            //         this.$message.error('请输入账号和密码');
+            //         console.log('error submit!!');
+            //         return false;
+            //     }
+            // });
+            this.$router.push('/login')
         },
     },
 };
@@ -72,7 +70,7 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(../../assets/img/login-bg.jpg);
+    background-image: url(../../assets/img/register-bg.jpg);
     background-size: 100%;
 }
 .ms-title {

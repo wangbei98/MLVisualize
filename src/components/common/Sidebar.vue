@@ -88,34 +88,50 @@
               items: [
                 // 这些便是菜单的数据，目前并没有实现对应的功能，为了展示侧边栏的样式，提前模拟在这里。
                 {
-                    index: 'LinerRegression',
-                    title: '线性回归',
+                    index: 'Regression',
+                    title: '回归',
                     subs: [
                         {
-                            index: 'unary-lr',
-                            title: '一元线性回归'
+                            index: 'linear-regression',
+                            title: '线性回归'
                         },
                         {
-                            index: 'multi-lr',
-                            title: '多元线性回归'
+                            index: 'exponential-regression',
+                            title: '指数回归'
+                        },
+                        {
+                            index: 'logarithmic-regression',
+                            title: '对数回归'
+                        },
+                        {
+                            index: 'polynomial-regression',
+                            title: '多项式回归'
                         },
                     ]
                 },
                 {
-                    index: 'logic-regression',
-                    title: '逻辑回归'
-                },
-                {
-                    index: 'decision-tree',
-                    title: '决策树算法'
-                },
-                {
-                    index: 'k-means',
+                    index: 'clustering',
                     title: '聚类算法'
                 },
                 {
-                    index: 'svm',
-                    title: '支持向量机'
+                    index: 'k-means',
+                    title: '聚类算法demo'
+                },
+                {
+                    index: 'load-csv-demo',
+                    title: '读取csv-demo'
+                },
+                {
+                    index: 'load-csv-demo-2',
+                    title: '读取csv-demo-2'
+                },
+                {
+                    index: 'model-demo',
+                    title: 'model-demo'
+                },
+                {
+                    index: 'tf-demo',
+                    title: 'tf-demo'
                 },
               ]
             };
